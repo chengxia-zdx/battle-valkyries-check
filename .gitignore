@@ -1,0 +1,7 @@
+/mods/
+/dist/
+/tools/BBBuilder/tools/config.json
+/tools/BBBuilder/tools/tasks.json
+/tools/BBBuilder/tools/argument.txt
+/tools/BBBuilder/out.cnut
+/out.cnut

@@ -1,0 +1,37 @@
+.bv-es-preview {
+    position: absolute;
+    right: 2%;
+    bottom: 22%;
+    z-index: 90;
+    box-sizing: border-box;
+    width: 350px;
+    max-width: 42%;
+    max-height: 70%;
+    overflow-y: auto;
+    padding: 16px 18px;
+    border: 1px solid #b5cbd7;
+    border-radius: 5px;
+    background: rgba(19, 28, 39, 0.97);
+    color: #f1eee4;
+    font-family: sans-serif;
+    font-size: 15px;
+    line-height: 1.45;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.55);
+    pointer-events: auto;
+}
+.bv-es-preview h2 { margin: 0 0 10px; font-size: 20px; color: #d2e9f5; }
+.bv-es-preview p { margin: 6px 0; }
+.bv-es-preview .bv-es-targets { font-weight: bold; color: #f8d58f; }
+.bv-es-preview .bv-es-note, .bv-es-preview .bv-es-hint { font-size: 13px; color: #bbc6d1; }
+.bv-es-preview .bv-es-cost { margin-top: 12px; }
+.bv-es-preview .bv-es-reason { color: #ffb4a6; padding: 6px 0; }
+.bv-es-actions { display: flex; margin-top: 12px; }
+.bv-es-actions button { flex: 1; cursor: pointer; padding: 9px 8px; border: 1px solid #8197a8; border-radius: 3px; font: inherit; color: #f1eee4; background: #303d4c; }
+.bv-es-actions .bv-es-confirm { margin-left: 10px; background: #3c6174; }
+.bv-es-actions button:hover { border-color: #e9f7ff; }
+.bv-es-actions button:disabled { cursor: default; opacity: 0.45; }
+@media (max-height: 800px) {
+    .bv-es-preview { width: 310px; padding: 12px 14px; font-size: 13px; }
+    .bv-es-preview h2 { font-size: 18px; }
+    .bv-es-preview .bv-es-note, .bv-es-preview .bv-es-hint { font-size: 12px; }
+}

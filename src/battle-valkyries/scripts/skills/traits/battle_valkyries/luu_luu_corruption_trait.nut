@@ -1,0 +1,1 @@
+this.luu_luu_corruption_trait <- this.inherit("scripts/skills/traits/battle_valkyries/black_beast_corruption_trait", { m = { RoleID = "luu_luu" }, function create() { this.black_beast_corruption_trait.create(); } });

@@ -1,0 +1,12 @@
+::$bvvar{namespace}.ValkyrieVisualThemes.ryza_cast <- { Effect = "effect_bv_ryza_cast", Color = "#ffffff", Scale = 0.7, EndScale = 1.15, Duration = 650, Layers = 1, Offsets = [{ X = 0, Y = -15 }] };
+::$bvvar{namespace}.ValkyrieVisualThemes.ryza_pulse <- { Effect = "effect_bv_ryza_pulse", Color = "#ffffff", Scale = 0.7, EndScale = 1.15, Duration = 650, Layers = 1, Offsets = [{ X = 0, Y = -15 }] };
+::$bvvar{namespace}.ValkyrieVisualThemes.ryza_flame <- { Effect = "effect_bv_ryza_flame", Color = "#ffffff", Scale = 0.7, EndScale = 1.15, Duration = 650, Layers = 1, Offsets = [{ X = 0, Y = -15 }] };
+::$bvvar{namespace}.ValkyrieVisualThemes.ryza_frost <- { Effect = "effect_bv_ryza_frost", Color = "#ffffff", Scale = 0.7, EndScale = 1.15, Duration = 650, Layers = 1, Offsets = [{ X = 0, Y = -15 }] };
+::$bvvar{namespace}.ValkyrieVisualThemes.ryza_elixir <- { Effect = "effect_bv_ryza_elixir", Color = "#ffffff", Scale = 0.7, EndScale = 1.15, Duration = 650, Layers = 1, Offsets = [{ X = 0, Y = -15 }] };
+::$bvvar{namespace}.ValkyrieVisualThemes.ryza_core_drive <- { Effect = "effect_bv_ryza_core_drive", Color = "#ffffff", Scale = 0.7, EndScale = 1.15, Duration = 1000, Layers = 1, Offsets = [{ X = 0, Y = -15 }] };
+::$bvvar{namespace}.SkillAudioCues.ryza_pulse <- { Owner = "ryza", Volume = 0.5, Files = ["sounds/skills/ryza/ryza_pulse_01.wav"] };
+::$bvvar{namespace}.SkillAudioCues.ryza_flame <- { Owner = "ryza", Volume = 0.5, Files = ["sounds/skills/ryza/ryza_flame_01.wav"] };
+::$bvvar{namespace}.SkillAudioCues.ryza_frost <- { Owner = "ryza", Volume = 0.5, Files = ["sounds/skills/ryza/ryza_frost_01.wav"] };
+::$bvvar{namespace}.SkillAudioCues.ryza_elixir <- { Owner = "ryza", Volume = 0.5, Files = ["sounds/skills/ryza/ryza_elixir_01.wav"] };
+::$bvvar{namespace}.SkillAudioCues.ryza_core_drive <- { Owner = "ryza", Volume = 0.5, Files = ["sounds/skills/ryza/ryza_core_drive_01.wav"] };
+::$bvvar{namespace}.ValkyrieVisualThemes.ryza_pet_hit <- { Effect = "effect_bv_ryza_pet_hit", Color = "#ffffff", Scale = 0.6, EndScale = 1.0, Duration = 400, Layers = 1, Offsets = [{ X = 0, Y = -15 }] };

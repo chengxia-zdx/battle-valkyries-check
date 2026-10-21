@@ -1,0 +1,195 @@
+.main-menu-screen > .battle-valkyries-main-menu-video
+{
+	position: absolute;
+	z-index: 1;
+	max-width: none;
+	max-height: none;
+	opacity: 0;
+	pointer-events: none;
+	background: #000;
+	-webkit-transition: opacity 450ms ease;
+	transition: opacity 450ms ease;
+}
+
+.main-menu-screen > .battle-valkyries-main-menu-video.is-ready
+{
+	opacity: 1;
+}
+
+/* Only reskin the initial title screen. World/tactical pause menus keep their
+   native treatment because the same MainMenuModule class also owns them. */
+.main-menu-screen .main-menu-module:not(.is-world-map):not(.is-tactical-map)
+{
+	background-image: none;
+}
+
+.main-menu-screen .main-menu-module:not(.is-world-map):not(.is-tactical-map) > .header
+{
+	overflow: visible;
+}
+
+.main-menu-screen .main-menu-module:not(.is-world-map):not(.is-tactical-map) > .header img.battle-valkyries-main-menu-logo
+{
+	top: -1.5rem;
+	left: 50%;
+	right: auto;
+	width: 54rem;
+	height: 27rem;
+	max-width: none;
+	margin: 0;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	-webkit-filter: drop-shadow(0 0.8rem 1.2rem rgba(8, 5, 40, 0.72));
+	filter: drop-shadow(0 0.8rem 1.2rem rgba(8, 5, 40, 0.72));
+}
+
+.main-menu-screen .main-menu-module:not(.is-world-map):not(.is-tactical-map) > .container
+{
+	top: -0.8rem;
+	left: -3rem;
+	width: 30.4rem;
+	height: 38rem;
+	padding: 0.4rem 0 0.8rem;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	background-image: -webkit-radial-gradient(center, ellipse, rgba(10, 10, 45, 0.48) 0%, rgba(10, 10, 45, 0.23) 42%, rgba(10, 10, 45, 0) 74%);
+	background-image: radial-gradient(ellipse at center, rgba(10, 10, 45, 0.48) 0%, rgba(10, 10, 45, 0.23) 42%, rgba(10, 10, 45, 0) 74%);
+	box-shadow: none;
+}
+
+.main-menu-screen .main-menu-module:not(.is-world-map):not(.is-tactical-map) > .container .row
+{
+	height: 4.2rem;
+	margin-bottom: 0;
+}
+
+.main-menu-screen .main-menu-module:not(.is-world-map):not(.is-tactical-map) > .container .row .l-center
+{
+	left: 0;
+	width: 24.4rem;
+	height: 4.2rem;
+}
+
+.main-menu-screen .main-menu-module:not(.is-world-map):not(.is-tactical-map) .ui-control.button-4
+{
+	border: 0;
+	border-radius: 0;
+	background-color: transparent;
+	background-image: none;
+	background-size: 100% 100%;
+	box-shadow: none;
+	color: rgba(242, 237, 255, 0.78);
+	text-shadow: 0 0.15rem 0.2rem rgba(7, 5, 35, 0.95), 0 0 0.55rem rgba(129, 127, 218, 0.34);
+	-webkit-transition: color 150ms ease, text-shadow 150ms ease, background-image 150ms ease;
+	transition: color 150ms ease, text-shadow 150ms ease, background-image 150ms ease;
+}
+
+.main-menu-screen .main-menu-module:not(.is-world-map):not(.is-tactical-map) .ui-control.button-4:before,
+.main-menu-screen .main-menu-module:not(.is-world-map):not(.is-tactical-map) .ui-control.button-4:after
+{
+	content: "";
+	position: absolute;
+	top: 50%;
+	z-index: 1;
+	width: 4.2rem;
+	height: 0.1rem;
+	margin-top: -0.05rem;
+	opacity: 0;
+	box-shadow: 0 0 0.55rem rgba(159, 155, 255, 0.68);
+	-webkit-transition: opacity 150ms ease, width 150ms ease;
+	transition: opacity 150ms ease, width 150ms ease;
+}
+
+.main-menu-screen .main-menu-module:not(.is-world-map):not(.is-tactical-map) .ui-control.button-4:before
+{
+	left: 1.2rem;
+	background: linear-gradient(90deg, transparent, rgba(176, 185, 255, 0.38), #f6ddff);
+}
+
+.main-menu-screen .main-menu-module:not(.is-world-map):not(.is-tactical-map) .ui-control.button-4:after
+{
+	right: 1.2rem;
+	background: linear-gradient(90deg, #f6ddff, rgba(176, 185, 255, 0.38), transparent);
+}
+
+.main-menu-screen .main-menu-module:not(.is-world-map):not(.is-tactical-map) .ui-control.button-4 > .label
+{
+	z-index: 2;
+	color: inherit;
+	font-weight: bold;
+	letter-spacing: 0.18rem;
+	-webkit-transition: color 150ms ease, text-shadow 150ms ease;
+	transition: color 150ms ease, text-shadow 150ms ease;
+}
+
+.main-menu-screen .main-menu-module:not(.is-world-map):not(.is-tactical-map) .ui-control.button-4:hover,
+.main-menu-screen .main-menu-module:not(.is-world-map):not(.is-tactical-map) .ui-control.button-4.is-selected
+{
+	background-image: -webkit-radial-gradient(center, ellipse, rgba(124, 91, 190, 0.54) 0%, rgba(78, 74, 164, 0.24) 42%, rgba(48, 43, 114, 0) 74%);
+	background-image: radial-gradient(ellipse at center, rgba(124, 91, 190, 0.54) 0%, rgba(78, 74, 164, 0.24) 42%, rgba(48, 43, 114, 0) 74%);
+	background-size: 100% 100%;
+	box-shadow: none;
+	color: #ffffff;
+	text-shadow: 0 0 0.65rem rgba(222, 198, 255, 0.92), 0 0 1.35rem rgba(94, 113, 236, 0.58), 0 0.15rem 0.2rem #100b38;
+}
+
+.main-menu-screen .main-menu-module:not(.is-world-map):not(.is-tactical-map) .ui-control.button-4:hover:before,
+.main-menu-screen .main-menu-module:not(.is-world-map):not(.is-tactical-map) .ui-control.button-4:hover:after,
+.main-menu-screen .main-menu-module:not(.is-world-map):not(.is-tactical-map) .ui-control.button-4.is-selected:before,
+.main-menu-screen .main-menu-module:not(.is-world-map):not(.is-tactical-map) .ui-control.button-4.is-selected:after
+{
+	width: 5rem;
+	opacity: 1;
+}
+
+.main-menu-screen .main-menu-module:not(.is-world-map):not(.is-tactical-map) .ui-control.button-4.is-active
+{
+	background-image: -webkit-radial-gradient(center, ellipse, rgba(68, 52, 129, 0.58) 0%, rgba(44, 42, 105, 0.22) 48%, rgba(35, 31, 85, 0) 76%);
+	background-image: radial-gradient(ellipse at center, rgba(68, 52, 129, 0.58) 0%, rgba(44, 42, 105, 0.22) 48%, rgba(35, 31, 85, 0) 76%);
+	background-size: 100% 100%;
+	box-shadow: none;
+}
+
+.main-menu-screen .main-menu-module:not(.is-world-map):not(.is-tactical-map) .ui-control.button-4[disabled]
+{
+	background-image: none;
+	background-size: 100% 100%;
+	box-shadow: none;
+	color: rgba(152, 145, 168, 0.62);
+}
+
+.main-menu-screen .main-menu-module:not(.is-world-map):not(.is-tactical-map) .divider
+{
+	height: 2.4rem;
+	margin: 0;
+	background: none;
+	box-shadow: none;
+}
+
+.main-menu-screen .main-menu-module:not(.is-world-map):not(.is-tactical-map) .divider:before
+{
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 6.2rem;
+	width: 18rem;
+	height: 0.1rem;
+	background: linear-gradient(90deg, transparent, rgba(206, 195, 255, 0.48), rgba(238, 217, 255, 0.78), rgba(206, 195, 255, 0.48), transparent);
+	box-shadow: 0 0 0.5rem rgba(124, 121, 225, 0.35);
+}
+
+.main-menu-screen .main-menu-module:not(.is-world-map):not(.is-tactical-map) .divider:after
+{
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 0.65rem;
+	height: 0.65rem;
+	margin-top: -0.32rem;
+	margin-left: -0.32rem;
+	background: #f5e6ff;
+	box-shadow: 0 0 0.7rem rgba(190, 174, 255, 0.9);
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+}

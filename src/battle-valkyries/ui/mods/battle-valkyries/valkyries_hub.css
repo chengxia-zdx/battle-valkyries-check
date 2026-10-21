@@ -1,0 +1,1324 @@
+.world-screen .topbar-options-module .l-button-container .l-battle-valkyries-button > img
+{
+	position: absolute;
+	left: 0;
+	top: -0.3rem;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	width: 2.95rem;
+	height: 2.95rem;
+	object-fit: contain;
+	transform: translateX(0.18rem);
+}
+
+.battle-valkyries-hub-overlay
+{
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 40;
+	background: rgba(0, 0, 0, 0.45);
+}
+
+.battle-valkyries-hub-dialog
+{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 72%;
+	height: 72%;
+	transform: translate(-50%, -50%);
+	background-image: url("coui://gfx/ui/skin/dialog_background_01.png");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+}
+
+.battle-valkyries-hub-header
+{
+	height: 6.0rem;
+	flex: 0 0 6.0rem;
+	display: flex;
+	align-items: center;
+	padding: 0 2.2rem;
+}
+
+.battle-valkyries-hub-title
+{
+	flex: 1;
+}
+
+.battle-valkyries-hub-close
+{
+	width: 3.0rem;
+	height: 3.0rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #d7c6a2;
+	cursor: pointer;
+}
+
+.battle-valkyries-hub-close:hover
+{
+	color: #ffffff;
+}
+
+.battle-valkyries-hub-tabs
+{
+	height: 4.6rem;
+	flex: 0 0 4.6rem;
+	display: flex;
+	align-items: center;
+	padding: 0 2.4rem;
+	overflow-x: auto;
+	overflow-y: hidden;
+}
+
+.battle-valkyries-hub-tab
+{
+	flex: 0 0 auto;
+	min-width: 12.0rem;
+	padding: 0 1.6rem;
+	box-sizing: border-box;
+	white-space: nowrap;
+	height: 3.6rem;
+	margin-right: 0.8rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #c9b98f;
+	cursor: pointer;
+	background-image: url("coui://gfx/ui/skin/button_03_default.png");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.battle-valkyries-hub-tab:hover,
+.battle-valkyries-hub-tab.is-selected
+{
+	color: #ffffff;
+	background-image: url("coui://gfx/ui/skin/button_03_hovered.png");
+}
+
+.battle-valkyries-hub-body
+{
+	flex: 1 1 auto;
+	margin: 0 2.4rem 2.4rem 2.4rem;
+	padding: 2.0rem 2.4rem;
+	line-height: 2.4rem;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	background: rgba(8, 8, 8, 0.35);
+	border: 1px solid rgba(120, 96, 54, 0.55);
+}
+
+.battle-valkyries-hub-body::-webkit-scrollbar
+{
+	width: 1.1rem;
+}
+
+.battle-valkyries-hub-body::-webkit-scrollbar-track
+{
+	background: rgba(8, 6, 4, 0.72);
+	border-left: 1px solid rgba(91, 70, 35, 0.58);
+}
+
+.battle-valkyries-hub-body::-webkit-scrollbar-thumb
+{
+	background: rgba(178, 137, 65, 0.9);
+	border: 1px solid rgba(58, 39, 15, 0.95);
+}
+
+.battle-valkyries-hub-body::-webkit-scrollbar-thumb:hover
+{
+	background: rgba(231, 184, 85, 0.96);
+}
+
+.battle-valkyries-summon-intro
+{
+	margin-bottom: 1.2rem;
+	color: #d7c6a2;
+}
+
+.battle-valkyries-gacha-panel
+{
+	min-height: 14.4rem;
+	margin: 0 0 1.8rem 0;
+	padding: 1.0rem 1.2rem 1.2rem 1.2rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 0.6rem;
+	background: rgba(12, 10, 7, 0.82);
+	border: 1px solid rgba(116, 92, 48, 0.76);
+	box-sizing: border-box;
+	box-shadow: inset 0 0 1.2rem rgba(255, 222, 137, 0.08), 0 0 1.0rem rgba(0, 0, 0, 0.28);
+}
+
+.battle-valkyries-gacha-pull-button
+{
+	position: relative;
+	width: 27.0rem;
+	height: 8.8rem;
+	flex: 0 0 auto;
+	padding: 0;
+	overflow: hidden;
+	background: rgba(9, 7, 5, 0.94);
+	border: 1px solid rgba(209, 166, 75, 0.92);
+	box-sizing: border-box;
+	cursor: pointer;
+	box-shadow: 0 0 1.0rem rgba(231, 180, 73, 0.36), inset 0 0 1.4rem rgba(255, 239, 171, 0.14);
+}
+
+.battle-valkyries-gacha-pull-button:hover
+{
+	border-color: rgba(255, 224, 119, 1.0);
+	box-shadow: 0 0 1.6rem rgba(245, 198, 80, 0.72), inset 0 0 1.6rem rgba(255, 239, 171, 0.20);
+}
+
+.battle-valkyries-gacha-pull-button img
+{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	display: block;
+	object-fit: contain;
+}
+
+.battle-valkyries-gacha-pull-label
+{
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 2.4rem;
+	line-height: 2.4rem;
+	text-align: center;
+	color: #fff0ba;
+	background: rgba(12, 7, 3, 0.78);
+	border-top: 1px solid rgba(255, 220, 116, 0.54);
+	text-shadow: 0 0 0.4rem #000000, 0 0 0.8rem #000000;
+}
+
+.battle-valkyries-gacha-info
+{
+	min-width: 0;
+	width: 46.0rem;
+	max-width: 100%;
+	flex: 0 0 auto;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: #d7c6a2;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+.battle-valkyries-gacha-cost
+{
+	height: 2.4rem;
+	line-height: 2.4rem;
+	color: #f2d890;
+}
+
+.battle-valkyries-gacha-selected,
+.battle-valkyries-gacha-progress-text
+{
+	height: 2.0rem;
+	line-height: 2.0rem;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.battle-valkyries-gacha-progress
+{
+	position: relative;
+	height: 1.2rem;
+	margin-top: 0.7rem;
+	background: rgba(5, 4, 3, 0.92);
+	border: 1px solid rgba(87, 65, 30, 0.95);
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+.battle-valkyries-gacha-progress-cells
+{
+	width: 42.0rem;
+	max-width: 100%;
+	height: 1.3rem;
+	margin-top: 0.7rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.battle-valkyries-gacha-progress-cell
+{
+	min-width: 0;
+	flex: 1 1 0;
+	height: 100%;
+	margin: 0 0.2rem;
+	background: rgba(5, 4, 3, 0.92);
+	border: 1px solid rgba(87, 65, 30, 0.95);
+	box-sizing: border-box;
+	box-shadow: inset 0 0 0.5rem rgba(0, 0, 0, 0.75);
+}
+
+.battle-valkyries-gacha-progress-cell.is-filled
+{
+	background: linear-gradient(to right, #7e5d21 0%, #c79a3f 54%, #f3d677 100%);
+	border-color: rgba(199, 154, 63, 0.98);
+	box-shadow: 0 0 0.6rem rgba(241, 207, 105, 0.58), inset 0 0 0.4rem rgba(255, 238, 155, 0.22);
+}
+
+.battle-valkyries-gacha-progress-cell.is-empty
+{
+	background: rgba(8, 6, 4, 0.94);
+}
+
+.battle-valkyries-summon-grid
+{
+	display: flex;
+	flex-wrap: wrap;
+	align-content: flex-start;
+	margin-left: -0.8rem;
+	margin-right: -0.8rem;
+}
+
+.battle-valkyries-summon-filters
+{
+	margin-bottom: 1.0rem;
+	padding: 1.0rem;
+	background: rgba(14, 11, 8, 0.85);
+	border: 1px solid rgba(116, 92, 48, 0.72);
+	color: #d7c6a2;
+}
+
+.battle-valkyries-summon-filter-row
+{
+	display: flex;
+	align-items: center;
+	height: 3.0rem;
+	min-height: 3.0rem;
+	margin-bottom: 0.8rem;
+}
+
+.battle-valkyries-summon-filter-row:last-child { margin-bottom: 0; }
+
+.battle-valkyries-summon-filter
+{
+	display: flex;
+	align-items: center;
+	flex: 1 1 0;
+	height: 3.0rem;
+	min-width: 0;
+	margin-right: 1.0rem;
+}
+
+.battle-valkyries-summon-filter > span
+{
+	flex: 0 0 auto;
+	margin-right: 0.6rem;
+}
+
+.battle-valkyries-summon-picker-button,
+.battle-valkyries-hub-dialog .battle-valkyries-summon-search
+{
+	min-width: 0;
+	height: 3.0rem;
+	max-height: 3.0rem;
+	position: relative;
+	color: #edddb9;
+	background: #17130e;
+	border: 1px solid #806438;
+	padding: 0 0.5rem;
+	box-sizing: border-box;
+}
+
+.battle-valkyries-summon-picker
+{
+	position: relative;
+	flex: 1 1 0;
+	min-width: 0;
+	height: 3.0rem;
+}
+
+.battle-valkyries-summon-picker-button
+{
+	display: flex;
+	align-items: center;
+	width: 100%;
+	text-align: left;
+	cursor: pointer;
+}
+
+.battle-valkyries-summon-picker-value
+{
+	flex: 1 1 auto;
+	min-width: 0;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.battle-valkyries-summon-picker-arrow { flex: 0 0 auto; margin-left: 0.6rem; }
+
+.battle-valkyries-summon-picker.is-open { z-index: 10; }
+
+.battle-valkyries-summon-picker-menu
+{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 100%;
+	max-height: 22.0rem;
+	overflow-y: auto;
+	background: #17130e;
+	border: 1px solid #a28044;
+	box-sizing: border-box;
+	box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.65);
+}
+
+.battle-valkyries-summon-picker-option
+{
+	display: block;
+	width: 100%;
+	min-height: 3.0rem;
+	padding: 0.4rem 0.7rem;
+	border: 0;
+	color: #edddb9;
+	background: #17130e;
+	text-align: left;
+	cursor: pointer;
+}
+
+.battle-valkyries-summon-picker-option:hover,
+.battle-valkyries-summon-picker-option:focus,
+.battle-valkyries-summon-picker-option[aria-selected="true"] { background: #49371d; color: #ffffff; }
+
+.battle-valkyries-hub-dialog .battle-valkyries-summon-search:hover,
+.battle-valkyries-hub-dialog .battle-valkyries-summon-search:focus
+{
+	background: #17130e;
+	outline: 1px solid #c6a563;
+}
+
+.battle-valkyries-hub-dialog .battle-valkyries-summon-search
+{
+	flex: 1 1 0;
+	width: 0;
+	margin-right: 1.0rem;
+}
+
+.battle-valkyries-summon-reset
+{
+	color: #f0dfb6;
+	background: #2b2215;
+	border: 1px solid #806438;
+	padding: 0.3rem 0.8rem;
+	cursor: pointer;
+}
+
+.battle-valkyries-summon-count
+{
+	color: #c4b28e;
+}
+
+.battle-valkyries-summon-count
+{
+	margin-bottom: 1.0rem;
+}
+
+.battle-valkyries-summon-empty
+{
+	padding: 2.0rem;
+	color: #d7c6a2;
+}
+
+.battle-valkyries-recruit-guide
+{
+	position: relative;
+	z-index: 3;
+	height: 10.4rem;
+	padding: 0.5rem 0.8rem;
+	box-sizing: border-box;
+	background: rgba(13, 9, 5, 0.94);
+	border-top: 1px solid rgba(116, 92, 48, 0.4);
+}
+
+.battle-valkyries-recruit-line,
+.battle-valkyries-recruit-summary
+{
+	display: block;
+	width: 100%;
+	height: 2.3rem;
+	line-height: 2.3rem;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	color: #dbccaa;
+}
+
+.battle-valkyries-recruit-line.recruit-stage { color: #b6d6a8; }
+.battle-valkyries-recruit-line.recruit-strength { color: #edcf89; }
+
+.battle-valkyries-recruit-summary
+{
+	border: 0;
+	padding: 0;
+	background: transparent;
+	text-align: left;
+	color: #bca5d5;
+	cursor: pointer;
+}
+
+.battle-valkyries-recruit-summary:hover,
+.battle-valkyries-recruit-summary:focus { color: #ffffff; text-decoration: underline; }
+.battle-valkyries-recruit-summary:disabled { cursor: default; color: #a99b81; }
+
+.battle-valkyries-guide-popup .battle-valkyries-popup-panel
+{
+	width: 72.0rem;
+	max-width: calc(100% - 4.0rem);
+	max-height: calc(100% - 4.0rem);
+	display: flex;
+	flex-direction: column;
+}
+
+.battle-valkyries-guide-popup .battle-valkyries-popup-message
+{
+	display: block;
+	flex: 1 1 auto;
+	min-height: 0;
+	overflow-y: auto;
+	text-align: left;
+	line-height: 2.4rem;
+}
+
+.battle-valkyries-guide-popup .battle-valkyries-popup-title,
+.battle-valkyries-guide-popup .battle-valkyries-popup-actions { flex: 0 0 auto; }
+
+.battle-valkyries-summon-card
+{
+	position: relative;
+	width: 23.0%;
+	margin: 0 1.0% 1.8rem 1.0%;
+	padding: 0;
+	overflow: hidden;
+	background: rgba(14, 11, 8, 0.82);
+	border: 1px solid rgba(116, 92, 48, 0.72);
+	box-sizing: border-box;
+	cursor: default;
+	/* Keep hover immediate: animated filters, glows and movement are costly in Coherent. */
+}
+
+.battle-valkyries-summon-card.has-detail,
+.battle-valkyries-summon-card.is-available,
+.battle-valkyries-summon-card.is-summoned,
+.battle-valkyries-summon-card.is-gacha-selected
+{
+	cursor: pointer;
+	border-color: rgba(190, 150, 72, 0.92);
+}
+
+.battle-valkyries-summon-card.has-detail:hover,
+.battle-valkyries-summon-card.is-available:hover,
+.battle-valkyries-summon-card.is-summoned:hover,
+.battle-valkyries-summon-card.is-gacha-selected:hover
+{
+	border-color: rgba(255, 216, 120, 1.0);
+}
+
+.battle-valkyries-summon-card.is-gacha-selected
+{
+	box-shadow: 0 0 1.0rem rgba(226, 178, 72, 0.48), inset 0 0 1.0rem rgba(255, 229, 133, 0.18);
+}
+
+.battle-valkyries-summon-card.is-locked .battle-valkyries-summon-portrait img,
+.battle-valkyries-summon-card.is-full .battle-valkyries-summon-portrait img
+{
+	opacity: 0.38;
+}
+
+.battle-valkyries-summon-portrait
+{
+	position: relative;
+	width: 100%;
+	height: 0;
+	padding-bottom: 133.333%;
+	background: rgba(0, 0, 0, 0.36);
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+.battle-valkyries-summon-portrait img
+{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	display: block;
+}
+
+.battle-valkyries-summon-name
+{
+	position: relative;
+	z-index: 3;
+	height: 4.2rem;
+	line-height: 4.2rem;
+	padding: 0 1.0rem;
+	text-align: center;
+	color: #f0dfb6;
+	background: rgba(13, 9, 5, 0.88);
+	border-top: 1px solid rgba(178, 137, 65, 0.68);
+	box-sizing: border-box;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.battle-valkyries-summon-badge
+{
+	position: absolute;
+	right: 0.8rem;
+	top: 0.8rem;
+	z-index: 4;
+	width: 3.0rem;
+	height: 3.0rem;
+	box-sizing: border-box;
+}
+
+.battle-valkyries-summon-badge img
+{
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	display: block;
+}
+
+.battle-valkyries-summon-select-badge
+{
+	position: absolute;
+	left: 0.8rem;
+	top: 0.8rem;
+	z-index: 4;
+	max-width: calc(100% - 1.6rem);
+	height: 2.2rem;
+	line-height: 2.2rem;
+	padding: 0 0.8rem;
+	color: #21170d;
+	background: rgba(226, 184, 83, 0.94);
+	border: 1px solid rgba(95, 67, 26, 0.95);
+	box-sizing: border-box;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	box-shadow: 0 0 0.8rem rgba(255, 218, 104, 0.58);
+}
+
+.battle-valkyries-bounty-intro
+{
+	margin: 0.6rem 0 1.2rem 0;
+	color: #d7c6a2;
+}
+
+.battle-valkyries-bounty-grid
+{
+	display: flex;
+	flex-wrap: wrap;
+	align-content: flex-start;
+	margin-left: -0.8rem;
+	margin-right: -0.8rem;
+	padding-bottom: 1.2rem;
+}
+
+.battle-valkyries-bounty-card
+{
+	position: relative;
+	width: 23.0%;
+	margin: 0 1.0% 1.8rem 1.0%;
+	padding: 0;
+	color: #e7d4a5;
+	background: rgba(24, 16, 8, 0.94);
+	border: 1px solid rgba(172, 129, 55, 0.86);
+	box-sizing: border-box;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+.battle-valkyries-bounty-card:hover
+{
+	border-color: #efd17a;
+	box-shadow: 0 0 0.9rem rgba(224, 177, 79, 0.55);
+}
+
+.battle-valkyries-bounty-card.is-pending
+{
+	border-color: #e5bd5f;
+	box-shadow: inset 0 0 1.2rem rgba(218, 168, 61, 0.2), 0 0 0.8rem rgba(224, 177, 79, 0.48);
+}
+
+.battle-valkyries-bounty-card.is-pending .battle-valkyries-bounty-status
+{
+	color: #fff0bd;
+	background: rgba(86, 55, 12, 0.86);
+}
+
+.battle-valkyries-bounty-card.is-blocked,
+.battle-valkyries-bounty-card.is-owned,
+.battle-valkyries-bounty-card.is-completed
+{
+	opacity: 0.68;
+}
+
+.battle-valkyries-bounty-wanted
+{
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	z-index: 2;
+	height: 2.2rem;
+	line-height: 2.2rem;
+	text-align: center;
+	color: #38220d;
+	background: rgba(227, 191, 113, 0.93);
+	letter-spacing: 0.16rem;
+}
+
+.battle-valkyries-bounty-poster
+{
+	position: relative;
+	width: 100%;
+	height: 0;
+	padding-bottom: 133.333%;
+	background: #171007;
+	overflow: hidden;
+}
+
+.battle-valkyries-bounty-poster img
+{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	display: block;
+	object-fit: cover;
+}
+
+.battle-valkyries-bounty-name,
+.battle-valkyries-bounty-stars,
+.battle-valkyries-bounty-line,
+.battle-valkyries-bounty-status
+{
+	padding: 0 0.7rem;
+	box-sizing: border-box;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.battle-valkyries-bounty-name
+{
+	margin-top: 0.55rem;
+	color: #f0dfb6;
+}
+
+.battle-valkyries-bounty-stars
+{
+	margin: 0.3rem 0;
+	color: #f0c84d;
+}
+
+.battle-valkyries-bounty-line
+{
+	line-height: 1.7rem;
+	color: #cbb889;
+}
+
+.battle-valkyries-bounty-status
+{
+	margin-top: 0.65rem;
+	padding-top: 0.45rem;
+	padding-bottom: 0.45rem;
+	color: #f0dfb6;
+	background: rgba(6, 4, 2, 0.55);
+}
+
+.battle-valkyries-popup-backdrop
+{
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 3;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: rgba(0, 0, 0, 0.46);
+}
+
+.battle-valkyries-popup-panel
+{
+	width: 36.0rem;
+	min-height: 14.0rem;
+	padding: 2.0rem 2.2rem;
+	box-sizing: border-box;
+	background-image: url("coui://gfx/ui/skin/popup_background_600x300.png");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.battle-valkyries-popup-title
+{
+	height: 3.0rem;
+	line-height: 3.0rem;
+	text-align: center;
+}
+
+.battle-valkyries-popup-message
+{
+	min-height: 4.8rem;
+	margin-top: 1.0rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	color: #d7c6a2;
+}
+
+.battle-valkyries-popup-actions
+{
+	margin-top: 1.4rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 1.0rem;
+}
+
+.battle-valkyries-popup-action
+{
+	min-width: 7.0rem;
+	height: 2.8rem;
+	padding: 0 1.0rem;
+	color: #21170d;
+	background: #c8a96a;
+	border: 1px solid #6d4f23;
+	box-sizing: border-box;
+	cursor: pointer;
+}
+
+.battle-valkyries-popup-action:hover
+{
+	background: #dec07d;
+}
+
+.battle-valkyries-detail-section
+{
+	margin-bottom: 1.2rem;
+	padding: 1.2rem;
+	background: rgba(10, 7, 4, 0.62);
+	border: 1px solid rgba(126, 95, 48, 0.56);
+	box-sizing: border-box;
+}
+
+.battle-valkyries-detail-section-header
+{
+	display: flex;
+	align-items: center;
+	margin-bottom: 0.7rem;
+}
+
+.battle-valkyries-detail-section-icon
+{
+	width: 5.0rem;
+	height: 5.0rem;
+	flex: 0 0 5.0rem;
+	margin-right: 1.1rem;
+	background: rgba(0, 0, 0, 0.34);
+	border: 1px solid rgba(154, 118, 60, 0.62);
+	box-sizing: border-box;
+}
+
+.battle-valkyries-detail-section-icon img
+{
+	width: 100%;
+	height: 100%;
+	display: block;
+	object-fit: contain;
+}
+
+.battle-valkyries-detail-section-title-wrap
+{
+	min-width: 0;
+	flex: 1 1 auto;
+}
+
+.battle-valkyries-detail-section-label
+{
+	height: 1.6rem;
+	line-height: 1.6rem;
+	color: #bba879;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.battle-valkyries-detail-section-name
+{
+	line-height: 2.0rem;
+	color: #f0dfb6;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.battle-valkyries-detail-section-description
+{
+	line-height: 2.1rem;
+	color: #d7c6a2;
+	white-space: pre-line;
+}
+
+.battle-valkyries-popup-message
+{
+	white-space: pre-line;
+}
+
+.battle-valkyries-memory-resource-bar
+{
+	display: flex;
+	flex-wrap: wrap;
+	margin: -0.3rem -0.3rem 0.9rem -0.3rem;
+	padding: 0.9rem;
+	background: rgba(15, 10, 20, 0.76);
+	border: 1px solid rgba(153, 117, 190, 0.55);
+}
+
+.battle-valkyries-memory-resource
+{
+	min-width: 10.5rem;
+	display: flex;
+	align-items: center;
+	margin: 0.3rem;
+	padding: 0.5rem 0.8rem;
+	color: #e8ddf3;
+	background: rgba(41, 29, 51, 0.78);
+	border: 1px solid rgba(171, 138, 203, 0.38);
+	box-sizing: border-box;
+}
+
+.battle-valkyries-memory-resource-mark
+{
+	width: 2.7rem;
+	height: 2.7rem;
+	margin-right: 0.7rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #fbebff;
+	border-radius: 50%;
+	background: rgba(126, 80, 153, 0.75);
+}
+
+.battle-valkyries-memory-resource-text
+{
+	min-width: 0;
+}
+
+.battle-valkyries-memory-resource-label
+{
+	color: #baa7c8;
+	line-height: 1.4rem;
+}
+
+.battle-valkyries-memory-resource-amount
+{
+	color: #fff3c5;
+	line-height: 1.8rem;
+}
+
+.battle-valkyries-memory-intro
+{
+	margin-bottom: 1.2rem;
+	color: #d8c9df;
+}
+
+.battle-valkyries-memory-layout
+{
+	min-height: 41rem;
+	display: flex;
+}
+
+.battle-valkyries-memory-list
+{
+	width: 24rem;
+	flex: 0 0 24rem;
+	max-height: 52rem;
+	overflow-y: auto;
+	margin-right: 1.2rem;
+	box-sizing: border-box;
+}
+
+.battle-valkyries-memory-card
+{
+	width: 100%;
+	min-height: 7.3rem;
+	margin: 0 0 0.7rem 0;
+	padding: 0.6rem;
+	display: flex;
+	align-items: center;
+	text-align: left;
+	color: #d8c9df;
+	background: rgba(22, 16, 27, 0.78);
+	border: 1px solid rgba(132, 100, 153, 0.48);
+	cursor: pointer;
+	box-sizing: border-box;
+}
+
+.battle-valkyries-memory-card:hover,
+.battle-valkyries-memory-card.is-selected
+{
+	color: #fff4d4;
+	border-color: rgba(226, 179, 104, 0.9);
+	background: rgba(61, 39, 62, 0.88);
+}
+
+.battle-valkyries-memory-portrait
+{
+	width: 8.5rem;
+	height: 8.5rem;
+	flex: 0 0 8.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	background: rgba(0, 0, 0, 0.38);
+	border: 1px solid rgba(166, 125, 185, 0.55);
+}
+
+.battle-valkyries-memory-portrait.is-small
+{
+	width: 5.7rem;
+	height: 5.7rem;
+	flex-basis: 5.7rem;
+	margin-right: 0.8rem;
+}
+
+.battle-valkyries-memory-portrait img
+{
+	width: 100%;
+	height: 100%;
+	display: block;
+	object-fit: contain;
+}
+
+.battle-valkyries-memory-card-text,
+.battle-valkyries-memory-identity
+{
+	min-width: 0;
+	flex: 1 1 auto;
+}
+
+.battle-valkyries-memory-card-name,
+.battle-valkyries-memory-card-background,
+.battle-valkyries-memory-card-rank
+{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.battle-valkyries-memory-card-rank,
+.battle-valkyries-memory-rank
+{
+	color: #e5bc72;
+}
+
+.battle-valkyries-memory-card-background,
+.battle-valkyries-memory-background,
+.battle-valkyries-memory-meta
+{
+	color: #baaebf;
+}
+
+.battle-valkyries-memory-detail
+{
+	min-width: 0;
+	flex: 1 1 auto;
+	padding: 1.2rem;
+	background: rgba(17, 12, 22, 0.78);
+	border: 1px solid rgba(143, 108, 164, 0.52);
+	box-sizing: border-box;
+}
+
+.battle-valkyries-memory-detail-header
+{
+	display: flex;
+	align-items: center;
+	margin-bottom: 1.2rem;
+}
+
+.battle-valkyries-memory-detail-header > .battle-valkyries-memory-portrait
+{
+	margin-right: 1.2rem;
+}
+
+.battle-valkyries-memory-detail-header > .battle-valkyries-memory-action
+{
+	flex: 0 0 auto;
+	margin: 0 0 0 1.2rem;
+}
+
+.battle-valkyries-memory-name
+{
+	color: #fff2d3;
+}
+
+.battle-valkyries-memory-section-title
+{
+	margin: 1.0rem 0 0.7rem 0;
+	color: #e5c487;
+	border-bottom: 1px solid rgba(160, 120, 171, 0.42);
+}
+
+.battle-valkyries-memory-stats
+{
+	display: flex;
+	flex-wrap: wrap;
+	margin: -0.3rem;
+}
+
+.battle-valkyries-memory-stat
+{
+	width: 23.5%;
+	flex: 0 0 23.5%;
+	min-height: 6.4rem;
+	margin: 0.3rem;
+	padding: 0.6rem;
+	background: rgba(32, 24, 38, 0.78);
+	border: 1px solid rgba(116, 91, 128, 0.42);
+	box-sizing: border-box;
+}
+
+.battle-valkyries-memory-stat.tier-2
+{
+	border-color: rgba(117, 164, 225, 0.8);
+}
+
+.battle-valkyries-memory-stat.tier-3
+{
+	border-color: rgba(228, 178, 78, 0.92);
+	box-shadow: 0 0 0.7rem rgba(228, 178, 78, 0.25);
+}
+
+.battle-valkyries-memory-stat-top
+{
+	display: flex;
+	align-items: center;
+}
+
+.battle-valkyries-memory-stat-top img
+{
+	width: 2.1rem;
+	height: 2.1rem;
+	margin-right: 0.4rem;
+	object-fit: contain;
+}
+
+.battle-valkyries-memory-stat-label
+{
+	min-width: 0;
+	flex: 1 1 auto;
+	color: #c3b7c7;
+}
+
+.battle-valkyries-memory-stat-value
+{
+	color: #fff1c9;
+}
+
+.battle-valkyries-memory-stat-tier
+{
+	color: #caadd8;
+}
+
+.battle-valkyries-memory-stat-next
+{
+	color: #918899;
+}
+
+.battle-valkyries-memory-resonance,
+.battle-valkyries-memory-biography-text
+{
+	margin-top: 0.8rem;
+	color: #c6b9c9;
+	white-space: pre-line;
+}
+
+.battle-valkyries-memory-rewards,
+.battle-valkyries-memory-shop-costs
+{
+	display: flex;
+	flex-wrap: wrap;
+	margin: -0.3rem;
+}
+
+.battle-valkyries-memory-reward,
+.battle-valkyries-memory-shop-cost
+{
+	margin: 0.3rem;
+	padding: 0.35rem 0.65rem;
+	color: #eadcf0;
+	background: rgba(75, 52, 84, 0.75);
+	border: 1px solid rgba(157, 119, 174, 0.5);
+}
+
+.battle-valkyries-memory-shop-cost.is-missing
+{
+	color: #d68d8d;
+	border-color: rgba(164, 62, 62, 0.75);
+}
+
+.battle-valkyries-memory-action,
+.battle-valkyries-memory-shop-action
+{
+	min-width: 11rem;
+	min-height: 3.5rem;
+	margin-top: 1.2rem;
+	padding: 0.5rem 1.2rem;
+	color: #f8e9be;
+	background: rgba(104, 63, 112, 0.88);
+	border: 1px solid rgba(221, 176, 101, 0.8);
+	cursor: pointer;
+}
+
+.battle-valkyries-memory-action:hover,
+.battle-valkyries-memory-shop-action:hover
+{
+	background: rgba(135, 82, 138, 0.96);
+}
+
+.battle-valkyries-memory-action.is-disabled,
+.battle-valkyries-memory-shop-action.is-disabled
+{
+	opacity: 0.45;
+	cursor: default;
+}
+
+.battle-valkyries-memory-empty
+{
+	padding: 2rem 1rem;
+	color: #a89caa;
+	text-align: center;
+}
+
+.battle-valkyries-memory-shop-grid
+{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: stretch;
+	margin: -0.5rem;
+}
+
+.battle-valkyries-memory-shop-product
+{
+	width: 31.5%;
+	flex: 0 0 31.5%;
+	min-height: 14.5rem;
+	margin: 0.5rem;
+	padding: 0.8rem;
+	display: flex;
+	flex-direction: column;
+	background: rgba(21, 15, 27, 0.82);
+	border: 1px solid rgba(143, 107, 164, 0.56);
+	box-sizing: border-box;
+}
+
+.battle-valkyries-memory-shop-product.is-unavailable
+{
+	background: rgba(27, 22, 28, 0.7);
+}
+
+.battle-valkyries-memory-shop-product-top
+{
+	display: flex;
+	align-items: center;
+	margin-bottom: 0.8rem;
+}
+
+.battle-valkyries-memory-shop-product-icon
+{
+	width: 4.6rem;
+	height: 4.6rem;
+	flex: 0 0 4.6rem;
+	margin-right: 0.7rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: rgba(9, 7, 13, 0.62);
+	border: 1px solid rgba(213, 171, 96, 0.48);
+	box-sizing: border-box;
+}
+
+.battle-valkyries-memory-shop-product-icon img
+{
+	width: 100%;
+	height: 100%;
+	display: block;
+	object-fit: contain;
+}
+
+.battle-valkyries-memory-shop-product-identity
+{
+	min-width: 0;
+	flex: 1 1 auto;
+}
+
+.battle-valkyries-memory-shop-product-name
+{
+	color: #f7e9c9;
+}
+
+.battle-valkyries-memory-shop-product-effect
+{
+	color: #d3b6dd;
+}
+
+.battle-valkyries-memory-shop-product-description
+{
+	min-height: 2.8rem;
+	margin-bottom: 0.4rem;
+	color: #bfb1c2;
+}
+
+.battle-valkyries-memory-shop-status
+{
+	margin-top: 0.4rem;
+	color: #9e91a1;
+}
+
+.battle-valkyries-memory-shop-product > .battle-valkyries-memory-shop-action
+{
+	width: auto;
+	min-width: 8.5rem;
+	min-height: 2.8rem;
+	align-self: flex-start;
+	margin-top: auto;
+	padding: 0.35rem 0.9rem;
+}

@@ -1,0 +1,4 @@
+this.tohsaka_rin_trait <- this.inherit("scripts/skills/traits/character_trait", {
+	m = { ValkyrieID = "tohsaka_rin" },
+	function create() { this.character_trait.create(); ::$bvvar{namespace}.setupValkyrieTrait(this, this.m.ValkyrieID); }
+});

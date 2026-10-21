@@ -1,0 +1,25 @@
+{
+	"working_dir":  "$project_path",
+	"selector": "source.nut",
+	"variants": [
+		{
+			"name": "Update Mod",
+			"working_dir": "",
+			"shell_cmd": "\"F:\\code\\battle-valkyries-check\\tools\\BBBuilder\\BBBuilder.exe\" build \"$project_path\" "
+		},
+		{
+			"name": "Update Mod and Launch",
+			"working_dir": "$project_path",
+			"shell_cmd": "\"F:\\code\\battle-valkyries-check\\tools\\BBBuilder\\BBBuilder.exe\" build \"$project_path\" -restart"
+		},
+		{
+			"name": "Rebuild Mod",
+			"working_dir": "",
+			"shell_cmd": "\"F:\\code\\battle-valkyries-check\\tools\\BBBuilder\\BBBuilder.exe\" build \"$project_path\" -rebuild"
+		},
+		{
+			"name": "Run File",
+			"shell_cmd": "\"F:\\code\\battle-valkyries-check\\tools\\BBBuilder\\tools\\sq_taro.exe\" $file"
+		}
+	]
+}

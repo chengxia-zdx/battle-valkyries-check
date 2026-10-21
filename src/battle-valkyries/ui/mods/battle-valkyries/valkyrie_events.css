@@ -1,0 +1,112 @@
+.world-event-content .row .description img[src*="_bond_"][src*="_intro.png"],
+.world-event-content .row .description img[src*="_corruption_"][src*="_intro.png"]
+{
+	float: left;
+	display: block;
+	width: 21.0rem;
+	height: 21.0rem;
+	margin: 0.5rem 2.0rem 1.5rem 0;
+	border: 0.2rem solid rgba(203, 174, 223, 0.72);
+	box-shadow: 0 0 1.2rem rgba(112, 72, 145, 0.48);
+}
+
+/* Black Beast story pages keep the entire paragraph below the image. */
+.world-event-content .row .description img[src*="_corruption_"][src*="_intro.png"]
+{
+	float: none;
+	clear: both;
+	max-width: 100%;
+	height: auto;
+	box-sizing: border-box;
+	margin: 0 auto 2.0rem auto;
+}
+
+.world-event-content .row .description img[src*="_bond_"][src*="_cg.png"],
+.world-event-content .row .description img[src*="_corruption_"][src*="_cg.png"]
+{
+	float: none;
+	clear: both;
+	display: block;
+	width: 64.0rem;
+	max-width: 100%;
+	height: auto;
+	box-sizing: border-box;
+	margin: 0 auto 2.0rem auto;
+	border: 0.2rem solid rgba(203, 174, 223, 0.72);
+	box-shadow: 0 0 1.6rem rgba(112, 72, 145, 0.58);
+}
+
+/* Kanade uses native image rows for story CGs and inline images for rewards. */
+.world-event-content .row img[src*="/ui/valkyries/bond/kanade_tachibana_"],
+.world-event-content .row .description img[src*="/ui/valkyries/kanade_tachibana_bond_"][src$="_card.png"]
+{
+	float: none;
+	clear: both;
+	display: block;
+	width: 64.0rem;
+	max-width: 100%;
+	height: auto;
+	box-sizing: border-box;
+	margin: 0 auto 2.0rem auto;
+}
+
+/* Keep the 3:4 outfit card compact enough to leave room for the reward story. */
+.world-event-content .row .description img[src*="/ui/valkyries/kanade_tachibana_bond_"][src$="_card.png"]
+{
+	width: 27.0rem;
+}
+
+.world-event-content .row .description img[src*="liuying_bond_"][src*="_intro.png"]
+{
+	border-color: rgba(112, 225, 216, 0.78);
+	box-shadow: 0 0 1.2rem rgba(45, 157, 160, 0.52);
+}
+
+.world-event-content .row .description img[src*="liuying_bond_"][src*="_cg.png"]
+{
+	border-color: rgba(112, 225, 216, 0.78);
+	box-shadow: 0 0 1.6rem rgba(45, 157, 160, 0.62);
+}
+
+.world-event-content .row .description img[src*="himeko_bond_"][src*="_intro.png"]
+{
+	border-color: rgba(226, 171, 92, 0.84);
+	box-shadow: 0 0 1.2rem rgba(177, 54, 48, 0.58);
+}
+
+.world-event-content .row .description img[src*="himeko_bond_"][src*="_cg.png"]
+{
+	border-color: rgba(226, 171, 92, 0.84);
+	box-shadow: 0 0 1.6rem rgba(177, 54, 48, 0.68);
+}
+
+/* Es uses the same native image DTO as Kanade, with prose below the CG. */
+.world-event-content .row img[src*="ui/valkyries/bond/es_"] { display:block;float:none;clear:both;width:64rem;max-width:100%;height:auto;margin:0 auto 1.2rem auto; }
+
+/* Hu Tao supplies one native image row, followed by full-width story prose. */
+.world-event-content .row img[src*="ui/valkyries/bond/hu_tao_"]
+{
+	display: block;
+	float: none;
+	clear: both;
+	width: 64rem;
+	max-width: 100%;
+	height: auto;
+	box-sizing: border-box;
+	margin: 0 auto 2rem auto;
+}
+
+/* Rachel supplies native image rows, not images inside .description.
+   Both the introductory artwork and CG span the story's available width. */
+.world-event-content .row img[src*="rachel_alucard_bond_"][src$="_intro.png"],
+.world-event-content .row img[src*="rachel_alucard_bond_"][src$="_cg.png"]
+{
+	display: block;
+	float: none;
+	clear: both;
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+	box-sizing: border-box;
+	margin: 0 auto 2rem auto;
+}

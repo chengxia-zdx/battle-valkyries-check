@@ -1,0 +1,97 @@
+/* Coherent-compatible layout: floats/absolute positioning, native skin assets. */
+.bv-roster-backdrop { position:absolute; top:0; bottom:0; left:0; right:0; z-index:100; background:rgba(0,0,0,0.65); }
+.bv-roster-overlay { position:absolute; top:0; bottom:0; left:0; right:0; margin:auto; width:104rem; height:76rem; max-width:96%; max-height:94%; z-index:100; color:#dfc9a2; font-size:1.4rem; background:url("coui://gfx/ui/skin/dialog_background_01.png") center no-repeat; background-size:100% 100%; outline:none; }
+.bv-roster-overlay *, .bv-roster-mini * { box-sizing:border-box; }
+.bv-roster-overlay button, .bv-roster-mini button, .battle-valkyries-roster-hub-button { border:0; color:#e2b45d; background:url("coui://gfx/ui/skin/button_01_default.png") center no-repeat; background-size:100% 100%; padding:0.6rem 1.1rem; font:inherit; text-shadow:1px 1px 1px #000; cursor:pointer; }
+/* After the button shorthand: use host/MSU aliases for localized glyphs. */
+.bv-roster-overlay, .bv-roster-mini, .battle-valkyries-roster-hub-button { font-family:"FreeUniversal","FreeUniversal-Regular",sans-serif; }
+.bv-roster-overlay button:hover, .bv-roster-mini button:hover { color:#ffe8ac; background-image:url("coui://gfx/ui/skin/button_01_hovered.png"); }
+.bv-roster-overlay button:disabled, .bv-roster-mini button:disabled { opacity:0.4; cursor:default; }
+.bv-roster-overlay button:focus { outline:1px solid #bc914a; }
+.bv-roster-header { position:absolute; top:0; left:3rem; right:3rem; height:10rem; padding-top:1.8rem; }
+.bv-roster-header h2 { margin:0; text-align:center; font-family:"Cinzel","Cinzel-Bold",serif; font-size:2.6rem; color:#e6be78; text-shadow:1px 2px 2px #000; }
+.bv-roster-close { position:absolute; right:0; top:1.8rem; }
+.bv-roster-summary { position:absolute; left:0; right:0; top:7.5rem; text-align:center; font-size:1.25rem; color:#c6b393; }
+.bv-roster-body { position:absolute; top:11rem; bottom:5.5rem; left:4rem; right:4rem; max-width:81rem; margin:auto; }
+.bv-roster-body h3 { margin:0; color:#d9b779; font-size:1.7rem; font-weight:normal; }
+.bv-roster-left { position:absolute; top:0; left:0; right:0; height:28rem; }
+.bv-roster-right { position:absolute; top:27.9rem; bottom:0; left:0; right:0; padding:0; border-top:1px solid #655137; }
+.bv-roster-direction { position:absolute; top:0; left:18rem; right:18rem; text-align:center; color:#a58e68; font-size:1.2rem; line-height:2rem; }
+.bv-roster-formation { position:absolute; top:3rem; left:0; right:0; height:24.6rem; overflow-x:hidden; overflow-y:auto; }
+.bv-roster-slot { position:relative; float:left; width:11.111%; height:8.2rem; border:0; background:none; }
+.bv-roster-slot.is-empty { background:url("coui://gfx/ui/skin/inventory_figure.png") center bottom no-repeat; background-size:6.8rem 7.8rem; opacity:0.35; cursor:pointer; }
+.bv-roster-slot.is-empty:hover, .bv-roster-slot.is-empty.bv-drop-target { opacity:0.9; }
+.bv-roster-slot.is-empty.is-blocked { background:none; opacity:1; cursor:default; }
+.bv-roster-slot.bv-drop-target { background:url("coui://gfx/ui/skin/inventory_highlight.png") center no-repeat; background-size:100% 100%; }
+/* Reuse createListBrother and its native selection glow, with no rectangular card. */
+.bv-roster-person.ui-control.brother { position:absolute; bottom:0; left:50%; margin-left:-3.55rem; float:none; width:7.1rem; height:7.8rem; cursor:pointer; outline:none; background:none; border:0; }
+.bv-roster-person.ui-control.brother .image-layer { position:absolute; top:0; bottom:0; left:0; right:0; width:100%; height:100%; padding:0; }
+/* Native procedural portraits expand around their sprite origin when a weapon
+   grows the canvas. Anchor that origin, not the changing image bottom edge. */
+.bv-roster-person.ui-control.brother .image-layer img, .bv-roster-drag-proxy .image-layer img { display:block; position:absolute; width:auto; height:auto; max-width:none; max-height:none; left:50%; top:50%; bottom:auto; margin:0; -webkit-transform:translate(-50%,-50%); transform:translate(-50%,-50%); pointer-events:none; }
+.bv-roster-person.ui-control.brother .highlight-layer { position:absolute; top:-10%; left:-8%; width:116%; height:110%; opacity:0; }
+/* Keep native status icons inside the compact row, including its last column.
+   Only the icons intercept the pointer, so empty layers do not cover portraits. */
+.bv-roster-person.ui-control.brother .asset-layer { pointer-events:none; }
+.bv-roster-person.ui-control.brother .primary-status-container { position:absolute; top:2.8rem; right:0; width:2rem; height:2rem; margin:0; float:none; }
+.bv-roster-person.ui-control.brother .primary-status-container:empty { display:none; }
+.bv-roster-person.ui-control.brother .status-container { position:absolute; bottom:0; left:0.2rem; width:100%; height:2.5rem; margin:0; float:none; }
+.bv-roster-person.ui-control.brother .status-container img, .bv-roster-person.ui-control.brother .primary-status-container img { pointer-events:auto; }
+.bv-roster-person.ui-control.brother .mood-layer img { right:0; }
+/* Six Legends injuries need two rows. Keep all icons and the upgrade marker
+   inside the cell, with no overlap or change to the roster's fixed height. */
+.bv-roster-person.ui-control.brother.has-many-statuses .status-container { width:6rem; height:4rem; }
+.bv-roster-person.ui-control.brother.has-many-statuses .status-container img { width:2rem; height:2rem; margin:0; }
+.bv-roster-person.ui-control.brother.has-many-statuses .primary-status-container { top:0.3rem; left:0; right:auto; }
+.bv-roster-person.ui-control.brother .highlight-layer img { display:block; width:100%; height:100%; }
+.bv-roster-person.ui-control.brother.is-selected .highlight-layer, .bv-roster-person.ui-control.brother:focus .highlight-layer { opacity:1; }
+.bv-roster-person.ui-control.brother:hover .image-layer { opacity:0.85; }
+.bv-roster-person.ui-control.brother.is-dragged { visibility:hidden; }
+.bv-roster-reserve-drop { display:none; }
+.bv-roster-overlay input.bv-roster-search { display:block; position:absolute; top:0.2rem; bottom:auto; left:8rem; right:auto; width:24%; height:3rem; margin:0; padding:0.4rem 0.8rem; color:#e5d6b7; font:inherit; border:1px solid #6a5030; background:rgba(0,0,0,0.35); outline:none; text-shadow:none; }
+.bv-roster-overlay input.bv-roster-search:focus { border-color:#c5a167; }
+.bv-roster-filters { position:absolute; top:0.2rem; left:35%; right:0; height:3rem; }
+.bv-roster-filters select { float:left; position:relative; width:32%; height:2.8rem; margin:0 1% 0 0; color:#dbc6a0; background:#302619; border:1px solid #624d32; font:inherit; font-size:1.1rem; }
+.bv-roster-cards { position:absolute; top:3.5rem; bottom:2.5rem; left:0; right:0; overflow-x:hidden; overflow-y:auto; }
+.bv-roster-card-grid { position:relative; width:100%; padding-top:1.2rem; overflow:hidden; }
+.bv-roster-card { float:left; position:relative; width:11.111%; height:8.2rem; padding:0; }
+.bv-roster-cards.bv-drop-target, .bv-roster-mini-grid.bv-drop-target { background:rgba(161,131,65,0.17); }
+.bv-roster-pages { position:absolute; bottom:0; left:0; right:0; height:2.5rem; text-align:center; }
+.bv-roster-pages span { margin:0 0.8rem; font-size:1.2rem; }
+.bv-roster-footer { position:absolute; bottom:3rem; height:2.5rem; left:4rem; right:4rem; text-align:center; }
+.bv-roster-footer strong { display:block; font-size:1.25rem; line-height:2.5rem; font-weight:normal; }
+.bv-roster-status { position:absolute; left:4rem; right:4rem; bottom:1rem; height:1.8rem; line-height:1.3rem; font-size:1.15rem; text-align:center; color:#cfad73; }
+.bv-roster-drag-proxy { position:absolute; z-index:10000; opacity:0.9; pointer-events:none; border:0; background:none; }
+.bv-roster-drag-proxy .image-layer { position:relative; width:100%; height:100%; }
+.bv-roster-mini { position:absolute; top:0; left:0; right:0; bottom:0; font-size:1.15rem; }
+/* The native footer is 25.2rem. Keep the inventory/perk panel untouched:
+   two formation rows and one reserve row, with controls in a narrow gutter.
+   1.5rem headroom + 3 * 7.9rem pitch retains native 7.1 x 7.8rem figures. */
+.bv-roster-mini-toolbar { position:absolute; top:1.5rem; left:0; width:4rem; height:15.8rem; color:#d6b67f; text-align:center; font-size:1rem; }
+.bv-roster-mini-toolbar strong { display:block; line-height:1.4rem; font-weight:normal; }
+.bv-roster-mini-toolbar strong span, .bv-roster-mini-reserve-label span { display:block; }
+.bv-roster-mini-total { margin-top:0.4rem; }
+.bv-roster-mini-open { position:absolute; bottom:0.7rem; left:0.1rem; width:3.8rem; padding:0.3rem 0 !important; }
+.bv-roster-mini-formation-viewport { position:absolute; top:0; left:4rem; right:0; height:17.3rem; }
+.bv-roster-mini-list.ui-control.list { margin:0; z-index:1; }
+/* Equipment may overhang a cell, but must not add phantom scrollable rows at
+   the edge of the formation or make the vanilla two-row list scroll. */
+.bv-roster-mini-list .bv-roster-mini-formation { position:relative; float:left; width:100%; padding-top:1.5rem; overflow:hidden; }
+.bv-roster-mini .bv-roster-slot { height:7.9rem; }
+.bv-roster-mini-reserve { position:absolute; top:17.3rem; left:0; right:0; height:7.9rem; }
+.bv-roster-mini-reserve:before { content:""; position:absolute; top:0; left:0; right:0; border-top:1px solid #655137; pointer-events:none; }
+.bv-roster-mini-reserve-label { position:absolute; top:0.5rem; left:0; width:4rem; text-align:center; font-size:1rem; line-height:1.4rem; font-weight:normal; color:#bfa77c; }
+.bv-roster-mini-grid { position:absolute; top:0; left:4rem; right:0; height:7.9rem; }
+.bv-roster-mini-grid:empty { background:none; }
+.bv-roster-mini-card { float:left; position:relative; width:11.111%; height:7.9rem; padding:0; }
+.bv-roster-mini-pages { position:absolute; bottom:0.6rem; left:0; width:4rem; height:1.8rem; text-align:center; white-space:nowrap; }
+.bv-roster-mini-pages button { width:1rem; height:1.8rem; font-size:1.4rem; line-height:1.6rem; padding:0; }
+.bv-roster-mini-pages span { display:inline-block; width:2rem; font-size:0.8rem; color:#bca988; }
+.bv-roster-mini-status { position:absolute; top:5rem; left:0.1rem; width:3.8rem; max-height:3.6rem; overflow:hidden; text-align:center; font-size:0.9rem; line-height:1.2rem; color:#bca988; }
+.bv-roster-mini.has-total-count .bv-roster-mini-status { top:8rem; }
+.battle-valkyries-roster-hub-button { flex:0 0 auto; margin-right:1.5rem; font-size:1.5rem; }
+.bv-roster-left > button { position:absolute; right:0; top:-0.3rem; }
+.bv-roster-right > h3 { position:absolute; top:0.6rem; left:0; }
+.bv-roster-overlay.is-two-rows .bv-roster-formation { height:16.4rem; }
+.bv-roster-overlay.is-two-rows .bv-roster-right { top:19.7rem; }
+@media (max-height:800px) { .bv-roster-overlay { height:70rem; } .bv-roster-body { top:10.5rem; } }

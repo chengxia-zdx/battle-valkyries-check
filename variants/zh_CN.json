@@ -1,0 +1,16 @@
+{
+  "language": "zh_CN",
+  "packageGroup": "battle-valkyries",
+  "targetFolder": "battle_valkyries_zh",
+  "privateFolder": "battle_valkyries_zh",
+  "namespace": "BattleValkyriesZh",
+  "modId": "mod_battle_valkyries_zh",
+  "version": "4.10.0",
+  "preloadFile": "battle_valkyries_zh.nut",
+  "iconPrefix": "battle_valkyries_zh",
+  "itemIdPrefix": "battle_valkyries_zh.skin",
+  "itemFlag": "IsBattleValkyriesZhSkin",
+  "effectId": "effects.battle_valkyries_skin",
+  "scenarioId": "scenario.battle_valkyries_zh_test_company",
+  "scenarioScript": "battle_valkyries_zh_test_company_scenario"
+}

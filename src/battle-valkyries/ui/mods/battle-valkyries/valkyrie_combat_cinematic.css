@@ -1,0 +1,4 @@
+.bv-combat-cinematic-pool { position:fixed; z-index:499; background:#000; }
+.bv-combat-cinematic { position:fixed; left:0; top:0; width:100%; height:100%; z-index:500; background:#000; pointer-events:auto; }
+.bv-combat-cinematic.is-video-ready { background:transparent; }
+.bv-combat-cinematic-skip { position:absolute; right:3%; bottom:4%; padding:8px 18px; border:1px solid #9da8b3; border-radius:3px; background:rgba(0,0,0,.6); color:#fff; font-family:"FreeUniversal","FreeUniversal-Regular",sans-serif; font-size:16px; cursor:pointer; }

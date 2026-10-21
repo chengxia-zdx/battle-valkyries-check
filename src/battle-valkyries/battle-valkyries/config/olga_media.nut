@@ -1,0 +1,15 @@
+::$bvvar{namespace}.SkillAudioCues.olga_black_flame <- { Owner = "olga", Volume = 0.6, Files = ["sounds/skills/olga/olga_black_flame_01.wav"] };
+::$bvvar{namespace}.SkillAudioCues.olga_queen_curse <- { Owner = "olga", Volume = 0.6, Files = ["sounds/skills/olga/olga_queen_curse_01.wav"] };
+::$bvvar{namespace}.SkillAudioCues.olga_soul_shock <- { Owner = "olga", Volume = 0.6, Files = ["sounds/skills/olga/olga_soul_shock_01.wav"] };
+::$bvvar{namespace}.SkillAudioCues.olga_black_storm <- { Owner = "olga", Volume = 0.6, Files = ["sounds/skills/olga/olga_black_storm_01.wav"] };
+::$bvvar{namespace}.SkillAudioCues.olga_dark_annihilation <- { Owner = "olga", Volume = 0.6, Files = ["sounds/skills/olga/olga_dark_annihilation_01.wav"] };
+::$bvvar{namespace}.SkillAudioCues.olga_soul_enslavement <- { Owner = "olga", Volume = 0.6, Files = ["sounds/skills/olga/olga_soul_enslavement_01.wav"] };
+::$bvvar{namespace}.SkillAudioCues.olga_eclipse <- { Owner = "olga", Volume = 0.6, Files = ["sounds/skills/olga/olga_eclipse_01.wav"] };
+::$bvvar{namespace}.ValkyrieVisualThemes.olga_cast <- { Effect = "effect_bv_olga_ring", Color = "#ffffff", Scale = 0.55, EndScale = 0.8, Duration = 450, Layers = 1, Offsets = [{ X = 0, Y = -32 }] };
+::$bvvar{namespace}.ValkyrieVisualThemes.olga_flame <- { Effect = "effect_bv_olga_flame", Color = "#ffffff", Scale = 0.7, EndScale = 1, Duration = 550, Layers = 1, Offsets = [{ X = 0, Y = 0 }] };
+::$bvvar{namespace}.ValkyrieVisualThemes.olga_curse <- { Effect = "effect_bv_olga_ring", Color = "#ffffff", Scale = 0.65, EndScale = 0.85, Duration = 700, Layers = 1, Offsets = [{ X = 0, Y = -25 }] };
+::$bvvar{namespace}.ValkyrieVisualThemes.olga_shock <- { Effect = "effect_bv_olga_beam", Color = "#ffffff", Scale = 0.55, EndScale = 0.7, Duration = 550, Layers = 1, Offsets = [{ X = 0, Y = 40 }] };
+::$bvvar{namespace}.ValkyrieVisualThemes.olga_storm <- { Effect = "effect_bv_olga_flame", Color = "#ffffff", Scale = 0.85, EndScale = 1.15, Duration = 650, Layers = 1, Offsets = [{ X = 0, Y = 0 }] };
+::$bvvar{namespace}.ValkyrieVisualThemes.olga_annihilation <- { Effect = "effect_bv_olga_beam", Color = "#ffffff", Scale = 0.75, EndScale = 1, Duration = 750, Layers = 1, Offsets = [{ X = 0, Y = 45 }] };
+::$bvvar{namespace}.ValkyrieVisualThemes.olga_control <- { Effect = "effect_bv_olga_ring", Color = "#ffffff", Scale = 0.75, EndScale = 1, Duration = 850, Layers = 1, Offsets = [{ X = 0, Y = -25 }] };
+::$bvvar{namespace}.ValkyrieVisualThemes.olga_eclipse <- { Effect = "effect_bv_olga_eclipse", Color = "#ffffff", Scale = 0.75, EndScale = 1.1, Duration = 900, Layers = 1, Offsets = [{ X = 0, Y = 30 }] };

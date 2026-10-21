@@ -1,0 +1,13 @@
+this.cartethyia_tempest_break_tides_skill <- this.inherit("$bvvar{privateFolder}/skills/core/valkyrie_active_skill", {
+	function create(){this.valkyrie_active_skill.create();this.m.IsTargeted=true;this.m.IsTargetingActor=true;this.m.IsAttack=true;this.m.IsWeaponSkill=false;this.m.IsRanged=false;this.m.ActionPointCost=4;this.m.FatigueCost=25;this.m.MinRange=1;this.m.MaxRange=3;this.m.MaxRangeBonus=0;this.m.IsSpent<-false;}
+	function owner(){local c=this.getContainer();return c==null?null:c.getActor();}
+	function manifest(){local c=this.getContainer();return c==null?null:c.getSkillByID("$bvvar{modId}.effects.cartethyia_fleurdelys_manifest");}
+	function melee(){local a=this.owner();if(a==null)return false;local w=a.getItems().getItemAtSlot(this.Const.ItemSlot.Mainhand);return w!=null&&w.isItemType(this.Const.Items.ItemType.MeleeWeapon);}
+	function erosion(t){return t!=null&&t.getSkills().getSkillByID("$bvvar{modId}.effects.cartethyia_aero_erosion")!=null;}
+	function isUsable(){return this.skill.isUsable()&&!this.m.IsSpent&&this.manifest()!=null&&this.melee();}
+	function onVerifyTarget(_originTile,_targetTile){if(!this.skill.onVerifyTarget(_originTile,_targetTile)||_targetTile==null||!_targetTile.IsOccupiedByActor)return false;local owner=this.owner();local target=_targetTile.getEntity();return ::$bvvar{namespace}.isEligibleValkyrieEnemyTarget(owner,target,this.m.MaxRange,true)&&owner.getTile().getDistanceTo(target.getTile())>=this.m.MinRange;}
+	function onUse(_user,_targetTile){if(_user==null||!this.isUsable()||!this.onVerifyTarget(_user.getTile(),_targetTile))return false;local primary=_targetTile.getEntity();foreach(t in ::$bvvar{namespace}.getValkyrieEnemyTargetsOnTiles(_user,::$bvvar{namespace}.getValkyrieRadiusTiles(_targetTile,1,true))){local r=::$bvvar{namespace}.applyValkyrieWeaponAttack(_user,this,t,{WeaponDamageMult=this.erosion(t)?1.50:1.20,ArmorDamageMult=1.50,HitChance=20,IgnoreDistance=true,Source="cartethyia_tempest"});if(t==primary&&this.erosion(t)&&r.Hit&&!::$bvvar{namespace}.isActorDeadOrDying(t)){::$bvvar{namespace}.applyValkyrieFixedArmorDamage(_user,this,t,this.Const.BodyPart.Body,30);::$bvvar{namespace}.applyValkyrieFixedHitpointDamage(_user,this,t,15);}}this.m.IsSpent=true;return true;}
+	function onTurnStart(){this.m.IsSpent=false;}
+	function onCombatStarted(){this.m.IsSpent=false;}
+	function getTooltip(){return [{id=1,type="title",text=this.getName()},{id=2,type="description",text=this.getDescription()},{id=3,type="text",text=this.getCostString()},{id=4,type="text",icon="ui/icons/special.png",text="$bv{skill.cartethyia_tempest_break_tides.tooltip}"}];}
+});
